@@ -1,4 +1,6 @@
-.construction {
+.product {
+    padding:15px;
+    margin: 10px;
+    border: 1px solid black   ;
 
-    color: purple;
 }
