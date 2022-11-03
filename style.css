@@ -1,6 +1,147 @@
-.product {
-    padding:15px;
-    margin: 10px;
-    border: 1px solid black   ;
+@media (max-width: 1000px) {
+  .product {
+    width: 45%;
+  }
+}
+@media (max-width: 750px) {
+  .product {
+    width: 100%;
+  }
+}
 
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #eaeaea;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  text-align: left;
+  padding-top: 20px;
+  color: #5b5b5b;
+  margin-left: 30px;
+}
+
+.product {
+  width: 300px;
+  margin: 10px;
+  box-sizing: border-box;
+  float: left;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: 0.4s;
+}
+
+.productTitle {
+  font-size: 18px;
+  text-align: center;
+  margin: 15px;
+  padding-top: 10px;
+  color: #5b5b5b;
+}
+
+.productDescription {
+  font-size: 14px;
+  text-align: center;
+  color: #aaa9a9;
+  padding-top: 0 8px;
+  margin: 15px;
+  block-size: 100px;
+}
+
+.productPriceTitel,
+.productPriceNum {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  display: inline;
+}
+
+.productAmount {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 0;
+}
+
+.inputBar {
+  border-radius: 7px;
+  width: 33px;
+  height: 20px;
+  border: 1px solid gray;
+}
+.checkoutWrapper {
+  height: 300px;
+}
+
+.checkoutMsg {
+  background-color: white;
+  display: none;
+  text-align: center;
+  margin: 30px 50px 0 70%;
+  padding: 30px;
+  border: 0.5px solid #5b5b5b;
+  color: #5b5b5b;
+  border-radius: 10px;
+}
+
+.totalItemsPriceTitel {
+  font-size: 12px;
+  color: #5b5b5b;
+}
+
+.productImg {
+  width: 100%;
+  height: 250px;
+  object-fit: fill;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.addBtn {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  background-color: #717456;
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.addBtn:active {
+  background-color: #5d5f4d;
+}
+
+.checkoutBtn {
+  text-align: right;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 7px;
+  border: 0.5px solid #717456;
+  margin-left: 200px;
+  margin-top: 10px;
+  background-color: white;
+  color: #5b5b5b;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.checkoutBtn :hover {
+  transform: scale(2);
+}
+.currProductsAmount {
+  color: #5b5b5b;
+  display: inline-block;
+  margin: 60px 0 20px 180px;
 }
