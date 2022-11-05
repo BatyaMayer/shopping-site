@@ -22,6 +22,19 @@ let products = [
     }
 
 ]
+
+const checkoutWrapper = document.querySelector("#checkout-wrapper")
+const currProductsAmount = document.createElement("DIV")
+const newSpan = document.createElement("SPAN")
+const checkoutBtn = document.createElement("BUTTON")
+const Br = document.createElement("BR")
+const checkoutMsgDiv = document.createElement("DIV")
+let checkoutMsg = "Thank you for buying!"
+const totalItemsAmountTitel = document.createElement("SPAN")
+const totalItemsAmountNum = document.createElement("SPAN")
+const totalPriceTitel = document.createElement("SPAN")
+const totalPriceNum = document.createElement("SPAN")
+
 products.forEach((product) => {
     const productsContainer = document.querySelector('#products-container')
     const newProduct = document.createElement('DIV')
@@ -34,7 +47,6 @@ products.forEach((product) => {
     const newProductAmountNum = document.createElement('INPUT')
     const newAddBtn = document.createElement('BUTTON')
     const newProductImg = document.createElement('IMG')
-
 
 
 
@@ -87,5 +99,39 @@ products.forEach((product) => {
     newProduct.appendChild(newAddBtn)
     newAddBtn.textContent = "Add"
     newAddBtn.classList.add("addBtn")
-
 })
+
+
+
+checkoutWrapper.appendChild(Br)
+
+// //Checkout MSG
+// checkoutWrapper.appendChild(checkoutMsgDiv)
+// checkoutMsgDiv.textContent = checkoutMsg
+// checkoutMsgDiv.classList.add("checkoutMsg")
+
+// checkoutWrapper.appendChild(Br)
+
+
+//Products amount 
+checkoutWrapper.appendChild(totalItemsAmountTitel).textContent = "Total amount of items:"
+totalItemsAmountTitel.classList.add("totalItemsAmount")
+checkoutWrapper.appendChild(totalItemsAmountNum)
+totalItemsAmountNum.classList.add("totalItemsAmoun")
+
+checkoutWrapper.appendChild(Br)
+
+//products price
+checkoutWrapper.appendChild(totalPriceTitel).textContent = "Total price of items:"
+totalPriceTitel.classList.add("totalPrice")
+checkoutWrapper.appendChild(totalPriceNum)
+totalPriceNum.classList.add("totalPrice")
+
+
+//checkout Btn
+checkoutWrapper.appendChild(checkoutBtn)
+checkoutBtn.textContent = "Pay now"
+checkoutBtn.setAttribute("class", "checkoutBtn")
+
+
+
